@@ -19,7 +19,7 @@ def telegram_bot(token):
 
     @bot.message_handler(commands=["start"])
     def start_message(message):
-        bot.send_message(message.chat.id, "Температура в Ломже: " + Temp_teraz + "\n" + "Чувствуется как: " + Temp_feel + "\n" + "Давление: " + Temp_dawl + "\n" + "Скорость ветра: " +  Temp_wiatr)
+        bot.send_message(message.chat.id, "Lomza temp: " + Temp_teraz + "\n" + "Feelings as: " + Temp_feel + "\n" + "Dawl: " + Temp_dawl + "\n" + "Wind speed: " +  Temp_wiatr)
 
     bot.polling()
 
