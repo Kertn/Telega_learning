@@ -2,7 +2,7 @@
 import requests
 from bs4 import BeautifulSoup
 import telebot
-from token_bot import token
+
 
 Temp_teraz = ""
 
@@ -32,9 +32,6 @@ def get_data():
     responce = requests.get(r"https://pogoda.interia.pl/prognoza-dlugoterminowa-lomza,cId,19110")
 
     soup = BeautifulSoup(responce.text, "lxml")
-
-    with open ("weather.html", "w") as file:
-        file.write(responce.text)
 
     Temp_teraz = soup.find("div", class_="weather-currently-temp-strict").text
 
