@@ -1,1 +1,1 @@
-worker: python telegabot.py
+worker: python telbotlearn.py
