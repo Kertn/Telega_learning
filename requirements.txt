@@ -1,4 +1,4 @@
 requests
 bs4
-pytelegrambotapi --upgrade
+telebot
 lxml
