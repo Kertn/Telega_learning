@@ -1,4 +1,3 @@
-
 import requests
 from bs4 import BeautifulSoup
 import telebot
@@ -14,7 +13,7 @@ Temp_dawl = ""
 Temp_wiatr = ""
 
 
-def telegram_bot(token):
+def telegram_bot():
     bot = telebot.TeleBot("5455027588:AAH_oMg4rw7VqJadKf3Ym-n6xdQIXNjFPBg")
 
     @bot.message_handler(commands=["start"])
@@ -47,4 +46,4 @@ if __name__ == "__main__":
     get_data()
 
 
-telegram_bot(token)
+telegram_bot()
